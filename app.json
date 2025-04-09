@@ -9,13 +9,18 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coderkai.expoapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": ["NOTIFICATIONS"]
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +36,14 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#ffffff",
+          "sounds": []
         }
       ]
     ],
